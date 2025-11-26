@@ -1,0 +1,49 @@
+what is String 
+---------------
+String is a group of characters it can be represented as double quotes " " . and spaces is also considered as one character in String.
+
+Creation of Strings 
+===================
+type-1 
+------
+String s = "Hello world";
+we can declare a String type variable and directly initialize with characters.
+
+type-2
+-------
+we can create String class Object using new Operators and store group of characters
+
+example
+-------
+String s = new String("Dev");
+
+type-3
+------
+we can convert character type array into String Object by passing the array to the Object
+
+example
+-------
+char[] arr = {'a','e','i','o','u'};
+String str = new String(arr);
+
+String s = "codegnan";
+
+String s = new String("codegnan");
+
+what is the advantage of SCP?
+=============================
+instead of creating a separate Object for every requirement we can create only one Object we can reuse the same object for every requirement. this approach improve performance of the system and memory.
+
+what is the disadvantage of SCP?
+================================
+IN scp several references pointing to the same Object by using one reference if we are performing any changes the remaining reference will be reflected. to prevent this compulsory String Objects should be immutable. that is immutability is the main disadvantage of SCP?
+
+why scp like concept available only for String but not for StringBuffer and StringBuilder
+==========================================================================================
+as String Object is the most commonly used Object sun micro system people provided a specially designed memory area like scp to improve memory utilization and performance.
+
+But StringBuffer and StringBuilder object is not commonly used Object hence specially designed memory area is not at all required.
+
+similar to String Objects any other Objects immutable in java?
+--------------------------------------------------------------
+in addition to String Objects, all wrapper Objects are immutable in java.
